@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 5px;
+  width: 80%;
+  height: 70%;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Ranglar */
+.lorem1 { background: lime; grid-column: 1; grid-row: 1; }
+.lorem2 { background: magenta; grid-column: 1; grid-row: 2; }
+.lorem4 { background: cyan; grid-column: 1; grid-row: 3; }
+.lorem5 { background: salmon; grid-column: 1; grid-row: 4; }
+.lorem3 { background: gray; grid-column: 1; grid-row: 2 / span 2; }
+.lorem6 { background: blue; grid-column: 2; grid-row: 1 / span 4; }
